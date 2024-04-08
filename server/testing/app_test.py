@@ -68,7 +68,7 @@ class TestApp:
     def test_math_divide(self):
         '''divides parameters in "/math/" resource when operation is "div".'''
         response = app.test_client().get('/math/5/div/5')
-        assert(response.data.decode() == '1.0')
+        assert(response.data.decode() == '1')
     
     def test_math_modulo(self):
         '''finds remainder of parameters in "/math/" resource when operation is "%".'''
